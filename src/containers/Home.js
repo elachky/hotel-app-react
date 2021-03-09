@@ -14,11 +14,16 @@ function Home() {
         setVille(ville);
         setRegex(new RegExp(`^(${ville})`));
     }
-    
+
   return (
     <div className="Home">
-          <Header handleSelectedVille={handleSelectedVille}/>
-          <HotelList state={city === '' ? state : state.filter((item => regex.test(item.city)))} />
+          <Header
+              handleSelectedVille={handleSelectedVille}
+              cites={city === '' ? state.map(item => item.city) : state.map(item => item.city).filter((item => regex.test(item)))}
+          />
+          <HotelList
+              state={city === '' ? state : state.filter((item => regex.test(item.city)))}
+          />
     </div>
   );
 }

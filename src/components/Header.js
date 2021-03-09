@@ -3,7 +3,7 @@ import React from 'react'
 import CheckIntOut from './CheckIn-Out'
 import SearchBar from './SearchBar';
 
-const Header = ({handleSelectedVille}) => {
+const Header = ({handleSelectedVille, cites}) => {
     return (<div className='header'>
         <div className='header-top'>
             <h1>Name & logo of the enreprise</h1>
@@ -13,7 +13,7 @@ const Header = ({handleSelectedVille}) => {
                 Find your distination
             </h1>
             <div className='header-bot-search'>
-                <SearchBar handleSelectedVille={handleSelectedVille}/>
+                <SearchBar handleSelectedVille={handleSelectedVille} cites={cites}/>
                 <CheckIntOut />
             </div>
         </div>
