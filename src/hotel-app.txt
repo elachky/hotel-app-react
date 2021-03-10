@@ -12,3 +12,6 @@ En tant que utilisateur je veux un écran de détails de chaque hôtel pour pouv
     - Localisation.
     - Nombre d’étoile.
     - Un bouton de réservation. : modal (deux calendrier pour choisir la durée de réservation.)
+
+    music : 
+    https://www.youtube.com/watch?v=NeinUp6KxMU&ab_channel=MusicBrokers

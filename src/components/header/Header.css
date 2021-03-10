@@ -54,11 +54,25 @@
   display: flex;
   align-items: center;
   text-align: center;
+  font-size: 1.5rem;
   color: white;
   height: 40%;
   background-color: #08ac8e88;
   border-radius: 10px;
   padding: 0px 30px;
+  margin: 10px;
+}
+input[type=text]{
+  border: none;
+  color: white;
+  background-color: #08ac8ef5;
+  border-bottom: 12px solide white;
+  width: 30vw;
+  height: 5vh;
+}
+
+input[type=text]::placeholder{
+  color: white;
 }
 
 .header-bot-search {
