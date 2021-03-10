@@ -1,0 +1,14 @@
+Hotel App.(booking)
+
+En tant que utilisateur je veux un écran d’accueil, ce dernier se compose en :
+    - Un champs de recherche d’adresse.
+    - deux calendrier pour choisir la durée de réservation.
+    - Une liste d’hôtel qui se rafraichie au changement d’adresse.
+    - La liste trier par prix.
+    - Chaque élément de la liste comporte l’image de l’hôtel le prix et le nombre d’étoile attribuer.
+En tant que utilisateur je veux un écran de détails de chaque hôtel pour pouvoir voir en détails les informations et pouvoir réserver. la page se compose en :
+    - Carrousel d’image de l’hôtel.
+    - Le nom de l’hôtel.
+    - Localisation.
+    - Nombre d’étoile.
+    - Un bouton de réservation. : modal (deux calendrier pour choisir la durée de réservation.)

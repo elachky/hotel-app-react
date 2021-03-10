@@ -1,28 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import Header from '../components/Header'
 import HotelList from '../components/Hotel-list'
-import DATA from '../data'
 import '../styles/Home.css'
 
 function Home() {
-    const [state, setState] = useState(DATA);
-    const [city, setVille] = useState('');
-    const [regex, setRegex] = useState('')
-
-    const handleSelectedVille = (ville) => {
-        setVille(ville);
-        setRegex(new RegExp(`^(${ville})`));
-    }
+  const state = useSelector(state => state);
 
   return (
     <div className="Home">
-          <Header
-              handleSelectedVille={handleSelectedVille}
-              cites={city === '' ? state.map(item => item.city) : state.map(item => item.city).filter((item => regex.test(item)))}
+          <Header cites={state.hotels.map(item => item.city)}
           />
           <HotelList
-              state={city === '' ? state : state.filter((item => regex.test(item.city)))}
+              state={state.hotels}
           />
     </div>
   );

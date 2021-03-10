@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useDispatch } from 'react-redux';
+import { filterAction } from '../actionsCreator';
 
 
-const SearchBar = ({handleSelectedVille, cites}) => {
+const SearchBar = ({ cites }) => {
+    const dispatch = useDispatch();
 
     return (<div className='searchBar'>
         <input
             type='text'
             list="cityList"
             placeholder='Search hotel...'
-            onChange={(e) => handleSelectedVille(e.target.value)}
+            onChange={e => dispatch(filterAction(e.target.value))}
         />
         <datalist id="cityList">
             {cites.map((item, key) => <option key={key} value={item}/>)}
