@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { filterAction } from '../actionsCreator';
+import { filterAction } from '../../actionsCreator';
 
 
 const SearchBar = ({ cites }) => {
