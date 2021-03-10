@@ -16,7 +16,7 @@
           "lat": "40.75680164",
           "long": "-73.99306987"
         },
-        "stars": 4,
+        "stars": 1,
         "rating": 4,
         "city": "sale"
       },
@@ -35,7 +35,7 @@
           "lat": "40.75680164",
           "long": "-73.99306987"
         },
-        "stars": 5,
+        "stars": 3,
         "rating": 4,
         "city": "rachidiya"
       },
@@ -55,7 +55,7 @@
           "long": "-73.99306987"
         },
         "stars": 5,
-        "rating": 4,
+        "rating": 5,
         "city": "rabat"
       },
       {
@@ -73,7 +73,7 @@
           "lat": "40.75680164",
           "long": "-73.99306987"
         },
-        "stars": 4,
+        "stars": 1,
         "rating": 4,
         "city": "media"
       },
@@ -92,7 +92,7 @@
           "lat": "40.75680164",
           "long": "-73.99306987"
         },
-        "stars": 4,
+        "stars": 2,
         "rating": 5,
         "city": "saidia"
       },
@@ -111,7 +111,7 @@
           "lat": "40.75680164",
           "long": "-73.99306987"
         },
-        "stars": 4,
+        "stars": 3,
         "rating": 5,
         "city": "marrakech"
       }

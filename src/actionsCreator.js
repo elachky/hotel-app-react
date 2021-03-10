@@ -12,9 +12,9 @@ const filterCity = (cites) => ({
 });
 
 export const filterAction = (city) => (dispatch, getState) => {
-    const initialHotels = getState().initialHotels;
-
-    dispatch(filterCity(initialHotels.filter(item => (new RegExp(`^(${city})`).test(item.city)))));
+    const { initialHotels } = getState();
+    console.log(getState());
+    dispatch(filterCity(initialHotels.filter(item => (new RegExp(`${city}`, 'i').test(item.city)))));
 }
 
 export const getDataAction = () => (dispatch) => {

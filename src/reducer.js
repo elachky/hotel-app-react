@@ -12,7 +12,7 @@ const reducer = (state = inititaleState, action) => {
         case actionType.FILTER:
             return { ...state, hotels: action.payload }
         case actionType.GET_DATA:
-            return { ...state, inititaleHotels: action.payload.hotels, hotels: action.payload.hotels, initReservation: action.payload.reservation};
+            return { ...state, initialHotels: action.payload.hotels, hotels: action.payload.hotels, initReservation: action.payload.reservation};
         default:
             return state
     }

@@ -1,0 +1,12 @@
+.star {
+  font-size: 40px;
+  padding: 0;
+}
+
+.checked {
+  color: gold;
+}
+
+.unchecked {
+  color: #333;
+}
