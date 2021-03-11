@@ -15,3 +15,4 @@ En tant que utilisateur je veux un écran de détails de chaque hôtel pour pouv
 
     music : 
     https://www.youtube.com/watch?v=NeinUp6KxMU&ab_channel=MusicBrokers
+    https://www.youtube.com/watch?v=OsdWqGaGAw8

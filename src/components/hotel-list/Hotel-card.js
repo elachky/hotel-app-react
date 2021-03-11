@@ -1,9 +1,10 @@
 import React from 'react'
 import HotelStars from './Hotel-starts';
+import { Link } from 'react-router-dom';
 import './Hotel-card.css';
 
 const HotelCard = ({ hotel }) => {
-    const { id, name, stars, images, price } = hotel;
+    const { id, name, stars, images, price, city } = hotel;
     let filled = stars
     const star = new Array(5).fill(0).map(() => filled-- > 0 ? 1 : 0);
     return (
@@ -22,10 +23,10 @@ const HotelCard = ({ hotel }) => {
                     </div>
                 </div>
                 <div className='card-description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation in <strong>{city}</strong>.
                 </div>
                 <div>
-                    <a href='https://facebook.com'>details</a>
+                    <Link to={`/details/${id}`}>details</Link>
                 </div>
             </div>
 

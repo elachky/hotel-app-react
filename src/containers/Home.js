@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Header from './header/Header'
-import HotelList from './hotel-list/Hotel-list'
-import '../styles/Home.css'
-import { getDataAction } from '../actionsCreator';
+import Header from '../components/header/Header'
+import HotelList from '../components/hotel-list/Hotel-list'
+import { getDataAction } from '../actions/actionsCreator';
 
-function Home() {
+function Home(props) {
   const dispatch = useDispatch();
-  useEffect(() => dispatch(getDataAction()), []);
+  useEffect(() => dispatch(getDataAction()), [props.match]);
   const state = useSelector(state => state);
 
   return (
